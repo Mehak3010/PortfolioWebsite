@@ -44,7 +44,7 @@ const AboutSection = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-neon rounded-full blur-xl opacity-30"></div>
                 <img 
-                  src="/lovable-uploads/a6d6b823-2550-4ca5-94ac-d541d73925b5.png"
+                  src="/images/a6d6b823-2550-4ca5-94ac-d541d73925b5.png"
                   alt="Mehak Arora" 
                   className="relative w-64 h-64 object-cover rounded-full shadow-elegant"
                 />
