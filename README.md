@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React + Vite + Tailwind CSS to showcase my skills, projects, and experience.
 
+
+
 _**✨ Features**_
 
 🎨 Modern UI with neon gradient theme
@@ -18,6 +20,8 @@ _**✨ Features**_
 
 🔗 Social media integration (GitHub, LinkedIn, Google Cloud)
 
+
+
 **🛠️ Technologies Used**
 
 React + Vite ⚛️ (Frontend Framework)
@@ -29,6 +33,7 @@ Framer Motion ✨ (Animations & transitions)
 Lucide Icons (Modern icons)
 
 TypeAnimation (Typing effect for intro text)
+
 
 
 **📂 Folder Structure**
