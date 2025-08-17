@@ -38,14 +38,5 @@ TypeAnimation (Typing effect for intro text)
 
 **📂 Folder Structure**
 
-PortfolioWebsite/
-├── src/
-│   ├── components/   # Reusable UI components
-│   ├── pages/        # Sections like Home, About, Projects, Contact
-│   ├── assets/       # Images and static files
-│   ├── App.jsx       # Main App entry
-│   └── index.css     # Global styles
-├── public/           # Static public assets
-├── package.json
-├── vite.config.js
-└── README.md
+<img width="553" height="287" alt="image" src="https://github.com/user-attachments/assets/f24a9e33-e577-4ad8-b458-13a696dd7d4c" />
+
