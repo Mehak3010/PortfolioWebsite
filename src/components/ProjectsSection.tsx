@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       title: "BeatBliss",
       description: "An interactive music application for discovering and playing your favorite tracks with a modern NCS playlist interface.",
       technologies: ["JavaScript", "React", "Audio API"],
-      image: "/lovable-uploads/7c6dcf0d-05eb-474f-8a6d-3941bf7439a4.png",
+      image: "/images/7c6dcf0d-05eb-474f-8a6d-3941bf7439a4.png",
       github: "https://github.com/Mehak3010/BeatBliss",
       live: "#"
     },
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
       title: "MyTaskList",
       description: "A clean and intuitive task management application with add, complete, and delete functionality for organizing your daily activities.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      image: "/lovable-uploads/4a9b74bd-b530-4d4c-a1b0-4a9347f31f91.png",
+      image: "/images/4a9b74bd-b530-4d4c-a1b0-4a9347f31f91.png",
       github: "https://github.com/Mehak3010/MyTaskList",
       live: "#"
     },
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       title: "Tic-Tac-Toe",
       description: "Classic Tic Tac Toe game built with Python and Pygame for interactive gameplay.",
       technologies: ["Python", "Pygame"],
-      image: "/lovable-uploads/a4ec0c18-f558-4915-ab4c-f278c96a962f.png",
+      image: "/images/a4ec0c18-f558-4915-ab4c-f278c96a962f.png",
       github: "https://github.com/Mehak3010/Tic-Tac-Toe-Project",
       live: "#"
     },
