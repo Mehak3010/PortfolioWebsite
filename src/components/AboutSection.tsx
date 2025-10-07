@@ -47,7 +47,7 @@ const AboutSection = () => {
                 <img
                   src={mehakProfile}
                   alt="Mehak Arora"
-                  className="relative w-50 h-50 object-cover rounded-full shadow-elegant"
+                  className="relative w-45 h-45 object-cover rounded-full shadow-elegant"
                 />
               </div>
 
