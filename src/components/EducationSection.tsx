@@ -18,6 +18,7 @@ const EducationSection = () => {
     { name: "Microsoft Asia AI Odyssey", issuer: "Microsoft", year: "2024" },
     { name: "AI for Youth Virtual Symposium", issuer: "Intel", year: "2024" },
     { name: "The Fundamentals of Digital Marketing", issuer: "HubSpot Academy", year: "2024" },
+    { name: "Awesome Day Online Conference", issuer: "Amazon Web Services", year: "2024" },
     { name: "Smart India Hackathon", issuer: "Ministry Of Education", year: "2023,2024" }
   ];
 
