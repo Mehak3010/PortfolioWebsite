@@ -82,22 +82,40 @@ const ProjectsSection = () => {
           </p>
 
           <div className="relative">
-            <div className="flex justify-center gap-4 mb-8">
+            <div className="flex justify-between items-center mb-8 relative">
               <Button
                 variant="outline"
                 onClick={() => scroll('left')}
-                className="transition-smooth"
+                className="transition-smooth absolute left-0 z-10"
               >
                 ← Previous
               </Button>
               <Button
                 variant="outline"
                 onClick={() => scroll('right')}
-                className="transition-smooth"
+                className="transition-smooth absolute right-0 z-10"
               >
                 Next →
               </Button>
             </div>
+            
+            {/* Circular navigation buttons */}
+            <Button
+              variant="outline"
+              onClick={() => scroll('left')}
+              className="absolute left-[-20px] md:left-[-30px] lg:left-[-50px] top-1/2 transform -translate-y-1/2 z-10 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-background/80 backdrop-blur-md border border-primary/20 shadow-md hover:shadow-lg hover:border-primary/50"
+              aria-label="Previous project"
+            >
+              ←
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => scroll('right')}
+              className="absolute right-[-20px] md:right-[-30px] lg:right-[-50px] top-1/2 transform -translate-y-1/2 z-10 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-background/80 backdrop-blur-md border border-primary/20 shadow-md hover:shadow-lg hover:border-primary/50"
+              aria-label="Next project"
+            >
+              →
+            </Button>
 
             <div
               ref={scrollContainerRef}
