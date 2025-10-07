@@ -82,23 +82,7 @@ const ProjectsSection = () => {
           </p>
 
           <div className="relative">
-            <div className="flex justify-between items-center mb-8 relative">
-              <Button
-                variant="outline"
-                onClick={() => scroll('left')}
-                className="transition-smooth absolute left-0 z-10"
-              >
-                ← Previous
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => scroll('right')}
-                className="transition-smooth absolute right-0 z-10"
-              >
-                Next →
-              </Button>
-            </div>
-            
+
             {/* Circular navigation buttons */}
             <Button
               variant="outline"
