@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github } from 'lucide-react';
 import { useRef } from 'react';
 import synqImage from '@/assets/synq-chat-interface.png';
+import inkwellImage from '@/assets/InkWell.png';
 
 const ProjectsSection = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -13,7 +14,7 @@ const ProjectsSection = () => {
       title: "InkWell",
       description: "A modern blog website built with TypeScript for creating and sharing content.",
       technologies: ["TypeScript", "React", "Node.js"],
-      image: "/public/images/InkWell.png",
+      image: inkwellImage,
       github: "https://github.com/Mehak3010/InkWell",
       live: "#"
     },

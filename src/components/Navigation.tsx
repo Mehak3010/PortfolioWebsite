@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +31,17 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'resume') {
+      // 下载简历PDF
+      const link = document.createElement('a');
+      link.href = '/MehakArora-CV.pdf';
+      link.download = 'MehakArora-CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -40,6 +54,7 @@ const Navigation = () => {
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' },
+    { id: 'resume', label: 'Resume' },
   ];
 
   return (
@@ -56,11 +71,37 @@ const Navigation = () => {
                 key={item.id}
                 variant={activeSection === item.id ? 'default' : 'ghost'}
                 onClick={() => scrollToSection(item.id)}
-                className="transition-smooth"
               >
                 {item.label}
               </Button>
             ))}
+          </div>
+
+          <div className="md:hidden">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-1/2 h-fit p-4 top-0 rounded-bl-3xl">
+                <nav className="flex flex-col gap-4 pt-8 text-center max-w-sm mx-auto">
+                  {navItems.map((item) => (
+                    <Button
+                      key={item.id}
+                      variant={activeSection === item.id ? 'default' : 'ghost'}
+                      onClick={() => {
+                        scrollToSection(item.id);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="max-w-[calc(100%-2rem)] mx-auto"
+                    >
+                      {item.label}
+                    </Button>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
