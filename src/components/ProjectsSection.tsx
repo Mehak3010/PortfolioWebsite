@@ -11,6 +11,14 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      title: "Black Light AI",
+      description: "AI security tool that performs automated web app risk evaluation using coordinated LLM agents.",
+      technologies: ["Python", "LangChain", "OpenAI API"],
+      image: black-lightImage,
+      github: "https://github.com/Mehak3010/black-light-ai",
+      live: "#"
+    },
+    {
       title: "InkWell",
       description: "A modern blog website built with TypeScript for creating and sharing content.",
       technologies: ["TypeScript", "React", "Node.js"],
