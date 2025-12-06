@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       title: "Black Light AI",
       description: "AI security tool that performs automated web app risk evaluation using coordinated LLM agents.",
       technologies: ["Python", "LangChain", "OpenAI API"],
-      image: black-lightImage,
+      image: blacklightImage,
       github: "https://github.com/Mehak3010/black-light-ai",
       live: "#"
     },
