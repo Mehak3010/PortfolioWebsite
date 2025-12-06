@@ -5,6 +5,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import { useRef } from 'react';
 import synqImage from '@/assets/synq-chat-interface.png';
 import inkwellImage from '@/assets/InkWell.png';
+import blacklightImage from '@/assets/black-lightImage.png';
 
 const ProjectsSection = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
